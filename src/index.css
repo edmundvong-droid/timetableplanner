@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+/* Bento light custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  header,
+  aside,
+  #view-search-input,
+  #entity-zoom-dropdown,
+  button {
+    display: none !important;
+  }
+
+  main {
+    padding: 0 !important;
+    background: white !important;
+  }
+
+  #timetable-matrix-container {
+    box-shadow: none !important;
+    border: 1px solid #cbd5e1 !important;
+    min-width: 100% !important;
+    background: white !important;
+  }
+}
+
+
